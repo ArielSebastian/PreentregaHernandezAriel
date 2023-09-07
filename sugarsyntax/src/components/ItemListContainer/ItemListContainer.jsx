@@ -1,23 +1,25 @@
-import React from 'react';
-import './ItemListContainer.css'; // Importa el archivo CSS
-
-function ItemListContainer() {
-    const items = [
-        { id: 1, nombre: 'Item 1' },
-        { id: 2, nombre: 'Item 2' },
-        { id: 3, nombre: 'Item 3' },
-    ];
-
+import React from "react";
+import "./ItemListContainer.css"; 
+const ItemListContainer = () => {
     return (
         <div className="item-list-container">
-            <h2>Lista de elementos</h2>
-            <ul className="item-list">
-                {items.map((item) => (
-                    <li key={item.id}>{item.nombre}</li>
-                ))}
-            </ul>
+            <div className="product">
+                <img src="url_de_la_imagen_1.jpg" alt="Producto 1" />
+                <p>Descripción del Producto 1</p>
+                <button>Agregar al Carrito</button>
+            </div>
+            <div className="product">
+                <img src="url_de_la_imagen_2.jpg" alt="Producto 2" />
+                <p>Descripción del Producto 2</p>
+                <button>Agregar al Carrito</button>
+            </div>
+            <div className="product">
+                <img src="url_de_la_imagen_3.jpg" alt="Producto 3" />
+                <p>Descripción del Producto 3</p>
+                <button>Agregar al Carrito</button>
+            </div>
         </div>
     );
-}
+};
 
 export default ItemListContainer;

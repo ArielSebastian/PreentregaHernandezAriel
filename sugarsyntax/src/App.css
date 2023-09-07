@@ -1,17 +1,15 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  margin: 0;
-  padding: 0;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
-.App {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 20px;
-}
-
-main {
-  padding: 20px;
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }

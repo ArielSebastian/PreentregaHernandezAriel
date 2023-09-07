@@ -1,17 +1,16 @@
-import React from 'react';
-import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import CartWidget from './components/CartWidget/CartWidget'; 
+import React from "react";
+import NavBar from "./components/NavBar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import CartWidget from "./components/CartWidget/CartWidget";
+import "./App.css"; 
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
       <NavBar />
-      <main>
+      <div className="content-container">
         <ItemListContainer />
-        <CartWidget itemCount={3} />
-      </main>
+      </div>
     </div>
   );
 }
